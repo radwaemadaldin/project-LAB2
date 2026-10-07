@@ -275,12 +275,12 @@ tbody tr:nth-child(even) { background: var(--bg); }
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #0f172a;
-    --card-bg: #1e293b;
-    --text-color: #f8fafc;
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #f8fafc;
     --text-muted: #94a3b8;
-    --border-color: #334155;
-    --primary-color: #38bdf8;
+    --border: #334155;
+    --primary: #38bdf8;
     --primary-hover: #0284c7;
     --alert-bg: #1e1b4b;
     --alert-border: #6366f1;
@@ -289,23 +289,27 @@ tbody tr:nth-child(even) { background: var(--bg); }
   }
 
   body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
   }
 
   .card, 
   header, 
+  nav,
+  .form-group, 
   .form-container, 
-  .modal-content {
-    background-color: var(--card-bg);
-    border-color: var(--border-color);
-    color: var(--text-color);
+  .modal-content,
+  .alert {
+    background-color: var(--card) !important;
+    border-color: var(--border) !important;
+    color: var(--text) !important;
   }
 
   input, 
-  select {
-    background-color: #0f172a;
-    color: #f8fafc;
-    border-color: #334155;
+  select, 
+  textarea {
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+    border-color: #334155 !important;
   }
 }
