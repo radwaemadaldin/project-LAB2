@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio Component Library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">Studio</a>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="components.html" aria-current="page">Components</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Component Library</h1>
+      <p>Accessible UI components built with CSS layout standards.</p>
+    </section>
+
+    <!-- Alert / Notification Component -->
+    <section class="section">
+      <h2>Alert / Notification</h2>
+      <div class="alert" role="status">
+        <strong>Success!</strong> Your preferences have been saved successfully.
+      </div>
+    </section>
+
+    <!-- CSS-Only Modal Trigger & Component -->
+    <section class="section">
+      <h2>CSS-Only Modal</h2>
+      <a class="btn" href="#modal-demo">Open Modal</a>
+
+      <div id="modal-demo" class="overlay" aria-modal="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-dialog">
+          <h3 id="modal-title">CSS Modal Window</h3>
+          <p>This modal is fully functional using pure CSS (:target pseudo-class) without JavaScript.</p>
+          <a class="btn" href="#">Close Modal</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Elements Component -->
+    <section class="section">
+      <h2>Form Elements</h2>
+      <form style="max-width: 400px;" onsubmit="return false;">
+        <div class="form-group">
+          <label for="username">Full Name</label>
+          <input type="text" id="username" name="username" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="role">Select Role</label>
+          <select id="role" name="role">
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn">Submit Form</button>
+      </form>
+    </section>
+
+    <!-- Buttons -->
+    <section class="section">
+      <h2>Buttons</h2>
+      <div class="row">
+        <button class="btn" type="button">Default Button</button>
+        <button class="btn btn-outline" type="button">Outline Button</button>
+        <button class="btn" type="button" disabled>Disabled Button</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Component Library - Studio</div>
+  </footer>
+
+</body>
+</html>
